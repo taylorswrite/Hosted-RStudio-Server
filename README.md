@@ -70,6 +70,16 @@ sudo apt-get install ddclient nginx certbot python3-certbot-nginx
 
   - 443:443 Used for https request
 
+#### Firewall configuration
+
+Open Ports 80 and 443 on the host computer. This is different from the router.
+
+```
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+sudo ufw reload
+```
+
 
 #### Get a Free Domain Name
 
